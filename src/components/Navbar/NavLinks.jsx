@@ -82,7 +82,7 @@ const NavLinks = () => {
                                   className="w-4 h-4 -left-2 top-7 absolute mt-1 bg-white rotate-45"
                                 ></div>
                               </div>
-                              
+                              {/* okay done yrrrr */}
                               <div className="bg-white flex flex-row p-5 gap-10">
                                 {link.sublinks.map((mysublinks) => (
                                   <div>
