@@ -1,0 +1,12 @@
+.top-banner{
+    background-color: var(--primary-background-color);
+}
+
+.top-banner p{
+    color: var(--secondary-text-color);
+}
+
+.for-logo-cart{
+    width: 25px !important;
+    height: 25px !important;
+}
