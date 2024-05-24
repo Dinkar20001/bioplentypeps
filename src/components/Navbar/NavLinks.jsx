@@ -54,9 +54,6 @@ const NavLinks = () => {
                           {mysublinks.Head}
                         </h1>
 
-
-
-
                         {mysublinks.sublink.map((slink) => (
                           <li className="text-sm text-gray-600 my-2.5 sub-para">
                             <Link
@@ -66,7 +63,6 @@ const NavLinks = () => {
                               {slink.name}
                             </Link>
                           </li>
-
 
                         ))}
                       </div>
@@ -96,7 +92,7 @@ const NavLinks = () => {
                         ? setSubHeading(slinks.Head)
                         : setSubHeading("")
                     }
-                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
+                    className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex cursor-pointer justify-between items-center md:pr-0 pr-5 selection:bg-blue-gray-700"
                   >
                     {slinks.Head}
 
@@ -117,7 +113,7 @@ const NavLinks = () => {
                   >
                     {slinks.sublink.map((slink) => (
                       <li className="py-3 pl-14">
-                        <Link to={slink.link}>{slink.name}</Link>
+                        <Link className="cursor-pointer hover:text-orange-600" to={slink.link}>{slink.name}</Link>
                       </li>
                     ))}
                   </div>
