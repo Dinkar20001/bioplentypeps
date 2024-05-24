@@ -61,7 +61,7 @@ const Carouselslider = () => {
       </div>
       <div className="absolute w-full bottom-10 text-center">
       <div className="cursor-pointer">
-      <button type="button" className="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Shop now</button>
+      <button type="button" className="mt-9 z-50 text-gray-900 bg-gradient-to-r from-orange-200 via-orange-200 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-3xl text-sm px-5 py-2.5 text-center me-2 mb-2 hover:text-gray-500 transition duration-500">Shop now</button>
       </div>
       </div>
       {/* Slider controls */}
