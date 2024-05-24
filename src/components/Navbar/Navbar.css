@@ -10,3 +10,23 @@
     width: 25px !important;
     height: 25px !important;
 }
+
+.for-controll-dropdown{
+    /* display: none; */
+    display: grid !important;
+    width: 620px !important;
+}
+
+.sub-heading{
+   
+}
+
+.sub-para{
+
+}
+
+.for-size-of-icons{
+    width:  20px;
+    height: 20px;
+    font-weight: 900;
+}
