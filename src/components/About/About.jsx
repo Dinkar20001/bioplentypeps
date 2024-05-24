@@ -4,19 +4,21 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <section>
-        <div className="grid grid-cols-1 lg:grid-cols-2 p-4">
-          <div className="flex justify-center lg:justify-end items-end p-4 lg:p-14">
+      <section className="flex justify-center items-center w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 p-4 flex justify-center lg:justify-end items-center">
+          <div className="flex justify-center w-full items-center p-4 lg:p-14 w-4/6">
+            <div className="flex max-w-xl">
             <img
               className="max-w-full h-auto"
               src="https://img.freepik.com/free-vector/science-teamwork-round-composition_1284-25025.jpg?w=1380&t=st=1716552892~exp=1716553492~hmac=c53837b3268396aa01b0bb6161acd6a21c720b5ebbd4836b8beb561e45894b35"
               alt="about img"
             />
+            </div>
           </div>
 
           <div className="w-full lg:w-3/6 flex justify-center items-center p-4 lg:p-0">
             <div>
-              <h6 className="uppercase text-sm my-4 font-bold text-primary">
+              <h6 className="uppercase text-sm my-4 font-bold primary-text">
                 About us
               </h6>
               <h1 className="capitalize text-3xl mb-3 font-extrabold">
