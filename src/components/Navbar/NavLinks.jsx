@@ -8,12 +8,13 @@ const NavLinks = () => {
   const [subHeading, setSubHeading] = useState("");
   return (
     <>
+      <section>
       {links.map((link) => (
         <div>
           <div className="px-3 text-left md:cursor-pointer group">
 
             <h1
-              className="py-1 text-md font-bold flex justify-between items-center md:pr-0 pr-5 group"
+              className="py-1 my-3 text-md font-bold flex justify-between items-center md:pr-0 pr-5 group text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:scale-105 transition duration-500"
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
@@ -36,14 +37,14 @@ const NavLinks = () => {
             
             {link.submenu && (
               <div>
-                <div className="absolute top-4 left-48 hidden group-hover:md:block hover:md:block">
+                <div className="absolute top-0 left-44 hidden group-hover:md:block hover:md:block">
                   <div className="py-3">
                     <div
                       className="w-4 h-4 -left-2 absolute 
                     mt-6 bg-white rotate-45"
                     ></div>
                   </div>
-                  <div className="bg-white p-2 grid grid-cols-3 rounded border border-grey-400 gap-3 for-controll-dropdown">
+                  <div className="bg-white p-2 grid grid-cols-3 rounded border border-grey-400 gap-2 for-controll-dropdown">
 
                     {link.sublinks.map((mysublinks) => (
                       <div>
@@ -60,7 +61,7 @@ const NavLinks = () => {
                           <li className="text-sm text-gray-600 my-2.5 sub-para">
                             <Link
                               to={slink.link}
-                              className="hover:text-primary"
+                              className="hover:text-orange-400 hover:scale-110 transition duration-500"
                             >
                               {slink.name}
                             </Link>
@@ -126,6 +127,7 @@ const NavLinks = () => {
           </div>
         </div>
       ))}
+      </section>
     </>
   );
 };

@@ -55,7 +55,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="py-7 px-3 inline-block text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:scale-110 transition duration-500">
+                <Link to="/" className="py-7 px-3 inline-block text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:scale-110 transition duration-500">
                   About
                 </Link>
               </li>
@@ -65,32 +65,17 @@ const Navbar = () => {
                   id="dropdownNavbarLink"
                   onClick={() => setShowdropdown(!showdropdown)}
                   data-dropdown-toggle="dropdownNavbar"
-                  className="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                  className="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:scale-110 transition duration-500"
                 >
                   Products
                   {showdropdown ? <GoChevronUp className="for-size-of-icons"/> : <GoChevronDown className="for-size-of-icons"/>} 
-                  {/* <svg
-                    className="w-2.5 h-2.5 ms-2.5"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 10 6"
-                  >
-                    <path
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="m1 1 4 4 4-4"
-                    />
-                  </svg> */}
                 </button>
                 {/* Dropdown menu */}
                 <div
                   id="dropdownNavbar"
                   className={`z-10 ${
                     showdropdown ? "" : "hidden"
-                  } absolute font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600`}
+                  } absolute font-normal bg-white mt-5 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600`}
                 >
                   <ul
                     className="py-2 text-sm text-gray-700 dark:text-gray-200"
@@ -108,17 +93,17 @@ const Navbar = () => {
               {/* multiple dropdown */}
 
               <li>
-                <Link to="/" className="py-7 px-3 inline-block">
+                <Link to="/" className="py-7 px-3 inline-block text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:scale-110 transition duration-500">
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link to="/" className="py-7 px-3 inline-block">
+                <Link to="/" className="py-7 px-3 inline-block text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:scale-110 transition duration-500">
                   Contact us
                 </Link>
               </li>
               <li>
-                <Link to="/" className="py-7 px-3 inline-block">
+                <Link to="/" className="py-7 px-3 inline-block text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:scale-110 transition duration-500">
                   <div className="flex items-center justify-center gap-2">
                     <FaUserCircle className="for-logo-cart" />
                     <p>Sign in</p>
@@ -126,7 +111,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="py-7 px-3 inline-block">
+                <Link to="/" className="py-7 px-3 inline-block text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-500 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:scale-110 transition duration-500">
                   <div className=" flex items-center justify-center gap-2">
                     <FaCartArrowDown className="for-logo-cart" />
                     <p>My Cart</p>
