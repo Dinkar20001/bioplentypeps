@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Button from "../Button";
 import NavLinks from "./NavLinks";
 import "./Navbar.css";
 import { FaUserCircle } from "react-icons/fa";
@@ -9,6 +8,8 @@ import { MdMenuOpen } from "react-icons/md";
 import { RiMenuUnfold3Line2 } from "react-icons/ri";
 import { GoChevronDown } from "react-icons/go";
 import { GoChevronUp } from "react-icons/go";
+import Logo from "../../../src/components/assests/img/logo.jpeg";
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -33,7 +34,7 @@ const Navbar = () => {
           <div className="flex items-center font-medium justify-around md:flex-col lg:flex-row">
             <div className="z-50 md:w-auto w-full flex justify-between">
               <img
-                src="https://private-user-images.githubusercontent.com/169672358/333560627-6d08966f-d201-4f5f-aace-355236dfb383.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTY1NDc5NDEsIm5iZiI6MTcxNjU0NzY0MSwicGF0aCI6Ii8xNjk2NzIzNTgvMzMzNTYwNjI3LTZkMDg5NjZmLWQyMDEtNGY1Zi1hYWNlLTM1NTIzNmRmYjM4My5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDUyNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA1MjRUMTA0NzIxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OWU4OTc2Y2E0NzdiNGNjZWM5NGFhMTczYTVlNGJjYmIxMzY1YjdhNTc3NDQ5OGRiN2M2YTRkZWZiYThmN2E4YyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.karc0u6KLJM0Uk4w4v5dYO4-TNZNNRENpVFz6pSnDOA"
+                src={Logo}
                 alt="logo"
                 className="md:cursor-pointer h-28"
               />
