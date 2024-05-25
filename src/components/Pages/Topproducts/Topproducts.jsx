@@ -5,6 +5,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Product from "./Product";
 import { productData, responsive } from "./data";
+import { Link } from "react-router-dom";
 
 const Topproducts = () => {
   const product = productData.map((item) => (
@@ -28,13 +29,13 @@ const Topproducts = () => {
           </div>
 
         <div className="flex justify-center items-center gap-2 primary-text hover:text-orange-900">
-            <a href="/">View All</a>
+            <Link to="/underdev">View All</Link>
             <GoArrowRight />
           </div>
         </div>
 
         <div className="w-full flex justify-center items-center">
-          <div className="w-4/6 md:5/6">
+          <div className="max-w-7xl">
             <Carousel responsive={responsive}>
               {product}
             </Carousel>
