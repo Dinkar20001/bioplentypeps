@@ -22,12 +22,13 @@ const About = () => {
                 About us
               </h6>
               <h1 className="capitalize text-3xl mb-3 font-extrabold">
-                We Are Professional pharmacy & Medical Service
+                Global Pharmaceutical Excellence with Bioplentypeps
               </h1>
+              <div className="border-l-4 border-orange-400 rounded-t-sm rounded-b-sm pl-3">
               <h3 className="font-bold">
-                Habitasse metus ridiculus dolor sit amet interdum tempor posuere
-                vulputate efficitur eleifend
+              Leading the Way in Pharmaceutical Innovation and Global Distribution
               </h3>
+              </div>
 
               <p className="mt-4">
                 Euismod conubia fermentum rhoncus felis eros. Letius posuere
