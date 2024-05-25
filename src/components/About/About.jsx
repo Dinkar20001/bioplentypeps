@@ -31,9 +31,7 @@ const About = () => {
               </div>
 
               <p className="mt-4">
-                Euismod conubia fermentum rhoncus felis eros. Letius posuere
-                accumsan sodales ligula etiam libero nisl senectus euismod dolor
-                mauris. Auctor nibh si quisque sapien nostra consectetuer.
+              Bioplentypeps, with USD 450mn revenue, delivers top-tier pharmaceutical solutions globally. Our FDA-approved facilities and decade-long expertise in peptide synthesis make us the preferred partner for leading pharmaceutical firms.
               </p>
 
               <button
